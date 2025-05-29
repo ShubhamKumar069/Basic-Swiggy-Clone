@@ -1,0 +1,405 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swiggy</title>
+  </head>
+  <link rel="icon" href="Logo-removebg-preview.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f7f7f7;
+    }
+
+    .logo {
+        height: 70.2px;
+        width: 77.2px;
+        margin-left: 90px;
+        margin-right: 20px;
+        position: absolute;
+        transition: transform 0.6s ease;
+        align-items: center;
+        margin-top: 25px;
+    }
+
+    .logo:hover {
+        height: 92px;
+        width: 98px;
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+
+    .swiggycorp {
+        font-weight: 400;
+        display: flex;
+        justify-content: center;
+        display: inline-block;
+        margin-left: 400px;
+        margin-top: 30px;
+        cursor: pointer;
+        transition: transform 0.6s ease;
+        &:hover{
+            color: orangered;
+        }
+
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        &:hover{
+            text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+        }
+    }
+
+    .swiggycorp2 {
+        font-weight: 400;
+        display: flex;
+        justify-content: center;
+        display: inline-block;
+        margin-left: 50px;
+        margin-top: 30px;
+        cursor: pointer;
+        transition: transform 0.6s ease;
+        &:hover{
+            color: orangered;
+        }
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        &:hover{
+            text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+        }
+        
+    }
+
+    .swiggycorp1 {
+        font-weight: 400;
+        display: flex;
+        justify-content: center;
+        display: inline-block;
+        margin-left: 200px;
+        margin-top: 30px;
+        cursor: pointer;
+        transition: transform 0.6s ease;
+        text-decoration: underline;
+        &:hover{
+            color: orangered;
+        }
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        &:hover{
+            text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+        }
+    }
+
+    .mind {
+        margin-top: 20px;
+        font-weight: 700;
+        margin-left: 100px;
+        font-size: 21px;
+        text-decoration: underline;
+    }
+
+    .biryani {
+        margin-left: 110px;
+        height: 180px;
+        width: 144px;
+        padding: 0;
+        cursor: pointer;
+    }
+
+    .biryani2 {
+        margin-left: 20px;
+        height: 180px;
+        width: 144px;
+        padding: 0;
+        cursor: pointer;
+    }
+
+    .biryani3 {
+        margin-left: 20px;
+        height: 182px;
+        width: 233px;
+        padding: 0;
+        cursor: pointer;
+        border-radius: 20px;
+    }
+
+    .biryani-text {
+        text-align: center;
+        font-size: 16px;
+        font-weight: 700;
+        margin-top: 0px;
+        margin-left: 20px;
+        cursor: pointer;
+    }
+
+    .biryani-text2 {
+        text-align: center;
+        font-size: 16px;
+        font-weight: 200;
+        margin-top: 0px;
+        margin-left: 20px;
+        cursor: pointer;
+    }
+
+    .food1 {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 50px;
+        width: 90%;
+        background-color: white;
+        margin-top: 20px;
+        padding: 20px;
+        padding-bottom: 40px;
+        border-radius: 40px;
+    }
+
+    .biryanicard {
+        cursor: pointer;
+    }
+
+    .btnall{
+        padding: 10px;
+        border-radius: 50px;
+        padding-right: 20px;
+        padding-left: 20px;
+        margin-top: 20px;
+        margin-left: 100px;
+        cursor: pointer;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+        &:hover{
+            box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.5);
+        }
+    }
+
+    .btnall2{
+        padding: 10px;
+        border-radius: 50px;
+        padding-right: 20px;
+        padding-left: 20px;
+        margin-top: 20px;
+        margin-left:10px;
+        cursor: pointer;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+        &:hover{
+            box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.5);
+        }
+    }
+
+    
+
+  </style>
+  <body>
+    <header>
+        <nav style="display: flex;
+                    position: relative;
+                    background-color: white;
+                    padding-bottom: 43px;
+                    align-items: center;">
+                <img src="Logo.png" alt="Logo" class="logo">
+                
+                <h4 class="swiggycorp1">Other <i class="fa-solid fa-arrow-down"></i> </h4>
+            <h3 class="swiggycorp"><i class="fa-solid fa-suitcase"></i> Swiggy Corporate</h3>
+            <h3 class="swiggycorp2"><i class="fa-solid fa-magnifying-glass"></i> Search</h3>
+            <h3 class="swiggycorp2"><i class="fa-solid fa-percent"></i> Offers</h3>
+            <h3 class="swiggycorp2"><i class="fa-solid fa-circle-question"></i> Help</h3>
+            <h3 class="swiggycorp2"><i class="fa-solid fa-user"></i> Sign In</h3>
+            <h3 class="swiggycorp2"><i class="fa-solid fa-cart-shopping"></i> Cart</h3>
+        </nav>
+    </header>
+
+    <h3 class="mind">What's On Your Mind?</h3>
+
+
+    <div style="display: flex; justify-content: center;">
+    <div class="food1">
+        <div>
+            <img src="Biryani.png" alt="food" class="biryani2">
+            <div class="biryani-text">Biryani</div>
+        </div>
+        <div class="vertical-hr"></div>
+
+        <div>
+            <img src="Tea.png" alt="food" class="biryani2">
+            <div class="biryani-text" style="font-size: 17px;">Tea</div>
+        </div>
+        <div>
+            <img src="Cakes.png" alt="food" class="biryani2">
+            <div class="biryani-text">Cake</div>
+        </div>
+        <div>
+            <img src="Chole.png" alt="food" class="biryani2">
+            <div class="biryani-text">Chole Bhature</div>
+        </div>
+        <div>
+            <img src="South.png" alt="food" class="biryani2">
+            <div class="biryani-text">South Indian</div>
+        </div>
+
+        <div>
+            <img src="Noodles-removebg-preview.png" alt="food" class="biryani2">
+            <div class="biryani-text">Noodles</div>
+        </div>
+    </div>
+
+</div>
+
+<div style="display: flex; justify-content: center;">
+
+<hr style="margin-top: 30px; width: 80%; margin-bottom: 30px;">
+
+</div>
+
+    <h3 class="mind">Top Restuarant Chains in Kolkata</h3>
+
+
+    <div style="display: flex; justify-content: center;">
+        <div class="food1">
+            <div>
+                <img src="Bakery.png" alt="food" class="biryani3">
+                <div class="biryani-text">Rohan's Bakery</div>
+                <div class="biryani-text"><i class="fa-solid fa-star"></i><span style="font-weight: 400;">4.4</span> | 45-50 mins</div>
+                <div class="biryani-text2">Bakery, Ice Cream, <br> Snacks....</div>
+            </div>
+
+            <div>
+                <img src="Food5.png" alt="food" class="biryani3">
+                <div class="biryani-text">Hotel Sai Nath</div>
+                <div class="biryani-text"><i class="fa-solid fa-star"></i><span style="font-weight: 400;">4.4</span> | 40-45 mins</div>
+                <div class="biryani-text2">North Indian, South Indian,<br> Chinese....</div>
+            </div>
+
+            <div>
+                <img src="Food6.png" alt="food" class="biryani3">
+                <div class="biryani-text">Dev International</div>
+                <div class="biryani-text"><i class="fa-solid fa-star"></i><span style="font-weight: 400;">4.4</span> | 45-50 mins</div>
+                <div class="biryani-text2">North Indian, Chinese, <br> Fast Food....</div>
+            </div>
+
+            <div>
+                <img src="Food7.png" alt="food" class="biryani3">
+                <div class="biryani-text">Adil Hotel</div>
+                <div class="biryani-text"><i class="fa-solid fa-star"></i><span style="font-weight: 400;">4.4</span> | 45-50 mins</div>
+                <div class="biryani-text2">North Indian, Tandoor, <br> Biryani....</div>
+            </div>
+            
+        </div>
+    
+    </div>
+
+    <div style="display: flex; justify-content: center;">
+
+        <hr style="margin-top: 30px; width: 80%; margin-bottom: 30px;">
+        
+        </div>
+
+        <h3 class="mind">Restaurants with online food delivery in Kolkata</h3>
+
+        <button class="btnall">Filter <i class="fa-solid fa-code-branch"></i></button>
+        <button class="btnall2">Sort By <i class="fa-solid fa-angle-down"></i></button>
+        <button class="btnall2">Ratings 4.0+</button>
+        <button class="btnall2">Pure Veg</button>
+        <button class="btnall2">Offers</button>
+        <button class="btnall2">Rs. 300 - Rs. 600</button>
+        <button class="btnall2">Less Thank Rs. 600</button>
+
+        <div style="display: flex; justify-content: center;">
+            <div class="food1">
+                <div>
+                    <img src="Bakery.png" alt="food" class="biryani3">
+                    <div class="biryani-text">Rohan's Bakery</div>
+                    <div class="biryani-text"><i class="fa-solid fa-star"></i><span style="font-weight: 400;">4.4</span> | 45-50 mins</div>
+                    <div class="biryani-text2">Bakery, Ice Cream, <br> Snacks....</div>
+                </div>
+    
+                <div>
+                    <img src="Food5.png" alt="food" class="biryani3">
+                    <div class="biryani-text">Hotel Sai Nath</div>
+                    <div class="biryani-text"><i class="fa-solid fa-star"></i><span style="font-weight: 400;">4.4</span> | 40-45 mins</div>
+                    <div class="biryani-text2">North Indian, South Indian,<br> Chinese....</div>
+                </div>
+    
+                <div>
+                    <img src="Food6.png" alt="food" class="biryani3">
+                    <div class="biryani-text">Dev International</div>
+                    <div class="biryani-text"><i class="fa-solid fa-star"></i><span style="font-weight: 400;">4.4</span> | 45-50 mins</div>
+                    <div class="biryani-text2">North Indian, Chinese, <br> Fast Food....</div>
+                </div>
+    
+                <div>
+                    <img src="Food7.png" alt="food" class="biryani3">
+                    <div class="biryani-text">Adil Hotel</div>
+                    <div class="biryani-text"><i class="fa-solid fa-star"></i><span style="font-weight: 400;">4.4</span> | 45-50 mins</div>
+                    <div class="biryani-text2">North Indian, Tandoor, <br> Biryani....</div>
+                </div>
+
+                <br>
+                
+                <div>
+                    <img src="Bakery.png" alt="food" class="biryani3">
+                    <div class="biryani-text">Rohan's Bakery</div>
+                    <div class="biryani-text"><i class="fa-solid fa-star"></i><span style="font-weight: 400;">4.4</span> | 45-50 mins</div>
+                    <div class="biryani-text2">Bakery, Ice Cream, <br> Snacks....</div>
+                </div>
+    
+                <div>
+                    <img src="Food5.png" alt="food" class="biryani3">
+                    <div class="biryani-text">Hotel Sai Nath</div>
+                    <div class="biryani-text"><i class="fa-solid fa-star"></i><span style="font-weight: 400;">4.4</span> | 40-45 mins</div>
+                    <div class="biryani-text2">North Indian, South Indian,<br> Chinese....</div>
+                </div>
+    
+                <div>
+                    <img src="Food6.png" alt="food" class="biryani3">
+                    <div class="biryani-text">Dev International</div>
+                    <div class="biryani-text"><i class="fa-solid fa-star"></i><span style="font-weight: 400;">4.4</span> | 45-50 mins</div>
+                    <div class="biryani-text2">North Indian, Chinese, <br> Fast Food....</div>
+                </div>
+    
+                <div>
+                    <img src="Food7.png" alt="food" class="biryani3">
+                    <div class="biryani-text">Adil Hotel</div>
+                    <div class="biryani-text"><i class="fa-solid fa-star"></i><span style="font-weight: 400;">4.4</span> | 45-50 mins</div>
+                    <div class="biryani-text2">North Indian, Tandoor, <br> Biryani....</div>
+                </div>
+
+                <br>
+
+
+                <div>
+                    <img src="Bakery.png" alt="food" class="biryani3">
+                    <div class="biryani-text">Rohan's Bakery</div>
+                    <div class="biryani-text"><i class="fa-solid fa-star"></i><span style="font-weight: 400;">4.4</span> | 45-50 mins</div>
+                    <div class="biryani-text2">Bakery, Ice Cream, <br> Snacks....</div>
+                </div>
+    
+                <div>
+                    <img src="Food5.png" alt="food" class="biryani3">
+                    <div class="biryani-text">Hotel Sai Nath</div>
+                    <div class="biryani-text"><i class="fa-solid fa-star"></i><span style="font-weight: 400;">4.4</span> | 40-45 mins</div>
+                    <div class="biryani-text2">North Indian, South Indian,<br> Chinese....</div>
+                </div>
+    
+                <div>
+                    <img src="Food6.png" alt="food" class="biryani3">
+                    <div class="biryani-text">Dev International</div>
+                    <div class="biryani-text"><i class="fa-solid fa-star"></i><span style="font-weight: 400;">4.4</span> | 45-50 mins</div>
+                    <div class="biryani-text2">North Indian, Chinese, <br> Fast Food....</div>
+                </div>
+    
+                <div>
+                    <img src="Food7.png" alt="food" class="biryani3">
+                    <div class="biryani-text">Adil Hotel</div>
+                    <div class="biryani-text"><i class="fa-solid fa-star"></i><span style="font-weight: 400;">4.4</span> | 45-50 mins</div>
+                    <div class="biryani-text2">North Indian, Tandoor, <br> Biryani....</div>
+                </div>
+
+            </div>
+        
+        </div>
+
+  </body>
+</html>
